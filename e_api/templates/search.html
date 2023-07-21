@@ -2,19 +2,19 @@
 
 {% block body %}
 
-<!--<form action="/search" method="GET" >-->
-<!--    <input type="text" name="q">-->
-<!--    <input type="submit" value="Search">-->
-<!--</form>-->
+<h1>HELLO Swati</h1>
+
+<form action="/search" method="GET" >
+   <input size = 100 type="text" name="q">
+   <input type="submit" value="Search">
+</form>
 
     <div>
-        {% for image in lex %}
         <table>
             <tr>
-                <td><img width="500vh" src={{image}} alt=""></td>
+                <td><img width="500vh" src={{theimg}} alt=""></td>
             </tr>
         </table>
-        {% endfor %}
     </div>
 
     <div>
