@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+
+{% block body %}
+
+<!--<form action="/search" method="GET" >-->
+<!--    <input type="text" name="q">-->
+<!--    <input type="submit" value="Search">-->
+<!--</form>-->
+
+    <div>
+        {% for image in lex %}
+        <table>
+            <tr>
+                <td><img width="500vh" src={{image}} alt=""></td>
+            </tr>
+        </table>
+        {% endfor %}
+    </div>
+
+    <div>
+        {% for show in shows %}
+        <table>
+            <tr>
+                <td>{{ show[1] }}</td>
+            </tr>
+        </table>
+        {% endfor %}
+   </div>
+
+
+
+{%  endblock%}
